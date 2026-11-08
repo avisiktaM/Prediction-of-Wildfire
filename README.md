@@ -38,12 +38,13 @@ Models Used
 
 To understand which algorithm is most suitable for wildfire occurrence prediction, five different classification techniques were trained and evaluated using the same training and testing datasets. Hyperparameters were selected through cross-validation on the training data.
 
-Model	                Selected Configuration
-Logistic Regression	C = 0.01
-Decision Tree	        max_depth = 7
-KNN	                k = 11
-Gaussian Naive Bayes	Default parameters
-SVM	                RBF kernel, C = 1.0
+| Model | Configuration |
+| :--- | :--- |
+| **Logistic Regression** | C = 0.01 |
+| **Decision Tree** | max_depth = 7 |
+| **KNN** | k = 11 |
+| **Gaussian Naive Bayes** | Default parameters |
+| **SVM** | RBF kernel, C = 1.0 |   
 
 The intention was not only to find the most accurate model but also to compare how different machine learning approaches behave on wildfire-related environmental data.
 
