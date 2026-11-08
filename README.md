@@ -52,12 +52,13 @@ Model Performance
 
 All models were evaluated using the same held-out test dataset consisting of 6,000 observations.
 
-Model	               Accuracy	AUC	Precision Recall        F1	MCC
-Logistic Regression	0.6332	0.6829	0.6043	  0.7724	0.6781	0.2772
-Decision Tree	        0.6257	0.6772	0.6139	  0.6778	0.6443	0.2527
-KNN	                0.6285	0.6805	0.6173	  0.6771	0.6458	0.2582
-Gaussian Naive Bayes	0.6203	0.6764	0.5974	  0.7391	0.6607	0.2477
-Support Vector Machine	0.6437	0.6921	0.6115	  0.7887	0.6889	0.3002
+| Model | Accuracy | AUC | Precision | Recall | F1 | MCC |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Logistic Regression** | 0.6332 | 0.6829 | 0.6043 | 0.7724 | 0.6781 | 0.2772 |
+| **Decision Tree** | 0.6257 | 0.6772 | 0.6139 | 0.6778 | 0.6443 | 0.2527 |
+| **KNN** | 0.6285 | 0.6805 | 0.6173 | 0.6771 | 0.6458 | 0.2582 |
+| **Gaussian Naive Bayes** | 0.6203 | 0.6764 | 0.5974 | 0.7391 | 0.6607 | 0.2477 |
+| **Support Vector Machine** | 0.6437 | 0.6921 | 0.6115 | 0.7887 | 0.6889 | 0.3002 |   
 
 Although the differences between models are not very large, some noticeable trends can be observed.
 
