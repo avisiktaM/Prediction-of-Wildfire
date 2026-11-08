@@ -32,7 +32,7 @@ Median FRP for non-fire observations ≈ 4.92
 
 Since FRP is closely related to the existence and strength of a fire, including it would effectively provide information about the target variable and lead to data leakage. To ensure a fair prediction task, FRP was removed before model training.
 
-The live Streamlit App: .........
+The live Streamlit App: https://prediction-of-wildfire-2025ag05940.streamlit.app/ 
 
 Models Used
 
@@ -157,37 +157,3 @@ Single Prediction Tool
 
 A simple interface allows users to manually enter feature values and obtain a wildfire probability prediction for a single observation.
 
-Geospatial View
-
-Because the dataset includes latitude and longitude coordinates, the dashboard also provides a geographic view of wildfire predictions. Users can visualise wildfire and non-wildfire locations directly on an interactive map, helping connect model outputs with their spatial distribution.
-
-Limitations
-
-Although the project achieved its objectives, several limitations should be acknowledged.
-
-The final models were trained on a 30,000-row sample rather than the complete dataset to keep training time manageable.
-
-Model evaluation is based on a single train-test split. Different splits may lead to slightly different performance estimates.
-
-KNN and SVM hyperparameter tuning was performed on a smaller subset of the training data due to computational constraints.
-
-Geographic coordinates (lat and lon) were retained as model features. While useful, they may allow models to learn regional patterns rather than purely environmental relationships.
-
-Wind direction was used in its original form and was not transformed into sine and cosine components, which may have provided additional information.
-
-Wildfire occurrence is influenced by many human and environmental factors that are not present in the dataset. Consequently, prediction performance remains moderate even for the best-performing model.
-Reproducibility
-
-All experiments were conducted using:
-
-github link: https://github.com/avisiktaM/Prediction-of-Wildfire
-
-Python 3.12+
-Scikit-learn 1.9.1
-Pandas
-NumPy
-Streamlit
-
-A fixed random seed (random_state = 42) was used throughout the project to ensure reproducibility.
-
-The complete workflow, including preprocessing, model training, tuning, evaluation and model export, is available in Preprocessing.ipynb.
